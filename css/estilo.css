@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@700&family=Josefin+Sans:ital,wght@1,400;1,700&family=Modak&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@700&family=Josefin+Sans:ital,wght@1,400;1,700&family=Modak&family=Overpass:ital@1&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1em; 
+	min-height: 100%;
+	margin: 5px;
+	background-color: #CBCBD3;
+}
+
+.Grid{
+	 
+ display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr  0.7fr  0.2fr;
+  gap: 10px 0px;
+  grid-template-areas:
+    "header header header"
+    "main1 main2 main3"
+    "footer footer footer";
+}
+
+
+
+
+.header { grid-area: header;
+  
+   background-color: #C2AFD3;
+   border-radius: 20px;
+
+}
+
+
+.header img{
+   width: 200px;
+    height: 170px;
+    float: left;
+    padding-left: 40px;
+}
+
+
+ h1{
+	padding-top: 50px;
+	font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+   font-size: 4em;
+   color: #016985;
+  -webkit-transition: font-size 2s ease;
+  transition: font-size 2s ease;
+ 
+}
+
+/*Imagen Olaf*/
+
+
+.main1 { grid-area: main1; 
+   background-color: #9C9AC0;
+   padding-left: 20px;
+   padding-top: 20px;
+   
+}
+
+
+
+/*titulo2x1*/
+
+
+.main2 { grid-area: main2; 
+   background-color: #9C9AC0;
+   padding-top: 40px;
+}
+
+
+
+
+/*formulario*/
+
+
+.main3 { grid-area: main3;
+   background-color: #9C9AC0;
+ }
+
+
+
+
+/*pie*/
+
+.footer { grid-area: footer; 
+   
+   background-color: #C2AFD3;
+   border-radius: 20px;
+}
+
+
+
+
+
+.dosporuno{
+	font-size: 10em;
+	color: #016985;
+	padding-left: 10px;
+
+}
+
+.borderinf{
+  background-color: #9C9AC0;
+   border-top:none;
+   border-left: none;
+   border-right: none;
+   border-bottom-style: solid;
+   border-bottom-width: 7px;
+
+   font-size: 20px;
+   
+ }
+
+ .tres{
+ 	font-size: 1.5em;
+ 	padding-top: 60px;
+ 	color: #5D555D;
+ }
+
+ .uno{
+ 	color:#5D555D;
+ 	font-size: 1.8em;
+ 	font-family: 'Josefin Sans', sans-serif;
+
+
+ }
+
+ .manda{
+  background-color: #FF760B;
+  font-size: 1.5em;
+  border: 5px solid  ;
+  padding: 8px;
+ width: 150px;
+ -webkit-box-shadow: 3px 3px 3px 3px #FF984A;
+box-shadow: 3px 3px 3px 3px #FF984A;
+
+
+}
+
+.manda:hover{
+	
+	border-radius: 120px;
+}
+.form{
+	padding-bottom: 40px;
+	padding-top: 30px;
+	font-size: 1.5em;
+	font-family: 'Overpass', sans-serif;
+	padding-left: 10px;
+	color: #5D555D;
+}
+
+
+.Olaf{
+	transition: all 0.3s ease;
+	padding-left: 60px;
+}
+
+.Olaf:hover{
+	transform: rotate(25deg);
+}
+
+.footer .micro {
+	float: left;
+	padding-top: 50px;
+	padding-left: 30px;
+	text-decoration: none;
+}
+
+
+
+input{
+	width: 320px;
+}
+
+.footer a{
+	float: right;
+	font-family: 'Overpass', sans-serif;
+	color: #5D555D;
+	font-size: 1.4em;
+}
+
+
+
+  
+  
+
+
+
+
+   @media   (max-width: 600px) {
+        .Grid{
+          grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr  0.6fr 1fr ;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header header header"
+    "main1 maian1 main1"
+    "main2 main2 main2"
+    "main3 main3 main3"
+    "footer";
+}
+
+
+body{
+	margin: 50px;
+}
+.header { grid-area: header; 
+   
+   padding-top: 30px;
+   width: 390px;
+}
+ .header h1{
+ 	 font-size: 1em;
+ 	
+    
+   
+   
+ }
+.main1 { grid-area: main1;
+
+ }
+
+ .main2{
+ 	grid-area: main2;
+ }
+.main3 { grid-area: main3; 
+
+}
+.footer { grid-area: footer; 
+ 
+}
+
+
+
+.uno{
+	padding-left: 50px;
+}
+
+.dosporuno{
+	padding-left: 60px;
+}
+
+.tres{
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+
+.form{
+	text-align: center;
+	
+}
+
+form{
+	text-align: center;
+}
+
+.footer{
+	text-align: center;
+}
+
+a{
+	padding-right: 28px;
+}
+
+
+@media (max-width: 1024px){
+ 	.Grid{
+          grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr  0.6fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header"
+    "main1"
+    "main2"
+    "main3"
+    "footer";
+}
+ }
+
+
+
+ .header h1{
+ 	 font-size: 1.5em;
+ 	 text-align: none;
+ 	 
+ 	
+ }
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,174 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em; 
+	min-height: 100%;
+	margin: 30px;
+	background-color:#C6B4AC;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.4fr 0.4fr  1fr fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header header header"
+    "main1 main1 main1"
+    "main3 main3 main3"
+   ;
+}
+
+
+.header { 
+	grid-area: header;
+	text-align: center;
+	color: #6F5241 ;
+	padding-bottom: 30px;
+
+}
+
+
+
+.main1 { 
+	grid-area: main1;
+	
+	text-align: center; 
+}
+
+
+
+.main3 { 
+	grid-area: main3;
+    
+    text-align: center;
+
+}
+
+
+
+
+
+
+h2{
+	font-size: 20px;
+}
+
+
+h2.lia{
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+	font-size: 20px;
+	padding-top :20px;
+	text-align: center;
+	font-family: 'Overpass', sans-serif;
+	color: #5D555D;
+}
+
+
+h2{
+color: #5D555D;
+}
+
+
+@media (max-width: 600px) /*and (max-width: 1024px)*/ {
+	.grid{
+		 
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.4fr 0.4fr  0.3fr;
+  gap: 0px 0px;
+  grid-template-areas: :
+    "header " 
+    "main1 "
+    "main2 "
+    "pie " 
+}
+
+body{
+	margin: 10px;
+}
+
+
+.header { 
+	grid-area: header;
+	; 
+ }
+
+ .main1{
+ 	padding-right: 10px;
+ }
+
+
+.main3 a {
+padding-left: 0px;
+color: #5D555D;
+padding-top: 30px;
+}
+
+h2{
+color: #5D555D;
+
+}
+
+
+
+
+}
+
+@media (max-width: 1024px) {
+	.grid{
+		grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.4fr 0.4fr  0.3fr;
+  gap: 0px 0px;
+  grid-template-areas: :
+    "header  " 
+    "main1 "
+    "main2"
+    "pie " 
+	}
+}
+.header{
+	font-size: 15px;
+}
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
